@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'title-anicb';
+  src: url('police/anicb.ttf') format('truetype');
+}
+
+@mixin ring-creation ($ringcolor,$ringsize,$ringBorderWidth) {
+  border-color: $ringcolor;
+  border-width: $ringBorderWidth;
+  border-style: solid;
+  box-shadow: $ringBorderWidth/3 $ringBorderWidth/3 5px darken( $ringcolor, 10% ), $ringBorderWidth/3 $ringBorderWidth/3 5px darken( $ringcolor, 10% ) inset;
+  border-radius: 50%;
+  width: $ringsize;
+  height: $ringsize;
+}
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1, h2 {
+  font-family: "title-anicb", serif;
+  font-size: 32px;
+}
+
+.container {
+  max-width: 960px;
+  background-image: url('picture/bg_light.png');
+  background-color: #f3f0e9;
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {font-family: 'title-anicb', Helvetica, sans-serif;}
+.navbar {background-color: #ff5f01;}
+.navbar-light .navbar-nav .nav-item {border-right: 1px solid #FFF;}
+.navbar-light .navbar-nav .nav-item:last-child {border-right:0;}
+.navbar-light .navbar-nav .nav-link {color:#FFF;}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
+  color:#FFF;
+  text-decoration: underline;
+}
+
+.ring_orange{
+  @include ring-creation (#ff6000,50px,5px)
+}
+
+.ring_yellow{
+  @include ring-creation (#ffc700,150px,12px)
+
+}
+
+@for $i from 1 through 6 {
+  .ring_grey#{$i} {
+    @include ring-creation (#373737,$i*10px+20px,$i*1px);
+    transform: translate(-$i*$i*3px + 70px);
+  }
+}
+.ring_grey{
+  @include ring-creation (#373737,150px,10px);
+}
+
+.colImage1{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.colImage2{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.colImage3{
+  display:flex;
+  flex-direction: column;
+}
+
+footer > div {
+  background-color: #ff5f01;
+  font-family: 'title-anicb', Helvetica, sans-serif;
+}
+
+ul {color:#FFF;list-style-type: none !important;}
+ul > li {padding:0.2em;}
+ul li > a {color:#FFF;}
