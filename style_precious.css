@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "title-anicb";
+    src: url("police/anicb.ttf") format("truetype");
+}
+body {
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    padding: 5px 25px;
+    font-size: 18px;
+    margin: 0;
+    color: #444;
+}
+
+h1, h2 {
+    font-family: "title-anicb", serif;
+    font-size: 32px;
+}
+
+.container {
+    max-width: 960px;
+    background-image: url("picture/bg_light.png");
+    background-color: #f3f0e9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    font-family: "title-anicb", Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #ff5f01;
+}
+
+.navbar-light .navbar-nav .nav-item {
+    border-right: 1px solid #FFF;
+}
+
+.navbar-light .navbar-nav .nav-item:last-child {
+    border-right: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FFF;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.ring_orange {
+    border-color: #ff6000;
+    border-width: 5px;
+    border-style: solid;
+    box-shadow: 1.6666666667px 1.6666666667px 5px #cc4d00, 1.6666666667px 1.6666666667px 5px #cc4d00 inset;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.ring_yellow {
+    border-color: #ffc700;
+    border-width: 12px;
+    border-style: solid;
+    box-shadow: 4px 4px 5px #cc9f00, 4px 4px 5px #cc9f00 inset;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.ring_grey1 {
+    border-color: #373737;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0.3333333333px 0.3333333333px 5px #1e1e1e, 0.3333333333px 0.3333333333px 5px #1e1e1e inset;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(67px);
+}
+
+.ring_grey2 {
+    border-color: #373737;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0.6666666667px 0.6666666667px 5px #1e1e1e, 0.6666666667px 0.6666666667px 5px #1e1e1e inset;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translate(58px);
+}
+
+.ring_grey3 {
+    border-color: #373737;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 1px 1px 5px #1e1e1e, 1px 1px 5px #1e1e1e inset;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(43px);
+}
+
+.ring_grey4 {
+    border-color: #373737;
+    border-width: 4px;
+    border-style: solid;
+    box-shadow: 1.3333333333px 1.3333333333px 5px #1e1e1e, 1.3333333333px 1.3333333333px 5px #1e1e1e inset;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(22px);
+}
+
+.ring_grey5 {
+    border-color: #373737;
+    border-width: 5px;
+    border-style: solid;
+    box-shadow: 1.6666666667px 1.6666666667px 5px #1e1e1e, 1.6666666667px 1.6666666667px 5px #1e1e1e inset;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    transform: translate(-5px);
+}
+
+.ring_grey6 {
+    border-color: #373737;
+    border-width: 6px;
+    border-style: solid;
+    box-shadow: 2px 2px 5px #1e1e1e, 2px 2px 5px #1e1e1e inset;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-38px);
+}
+
+.ring_grey {
+    border-color: #373737;
+    border-width: 10px;
+    border-style: solid;
+    box-shadow: 3.3333333333px 3.3333333333px 5px #1e1e1e, 3.3333333333px 3.3333333333px 5px #1e1e1e inset;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.colImage1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.colImage2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.colImage3 {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > div {
+    background-color: #ff5f01;
+    font-family: "title-anicb", Helvetica, sans-serif;
+}
+
+ul {
+    color: #FFF;
+    list-style-type: none !important;
+}
+
+ul > li {
+    padding: 0.2em;
+}
+
+ul li > a {
+    color: #FFF;
+}

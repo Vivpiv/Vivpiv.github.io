@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'title-anicb';
+    src: url('police/anicb.ttf') format('truetype');
+}
+
+
+body {
+    color:#494949;
+    font-family: 'text-partybusiness', Helvetica, sans-serif;
+}
+
+h1, h2 {
+    font-family: 'title-anicb', Helvetica, sans-serif;
+    font-size:1.3em;
+}
+
+
+h1 > span,
+.nav-pills .nav-link.active > span {
+    font-family: 'symbol-tngan', Helvetica, sans-serif;
+    color:#ff5f01;
+    vertical-align:top;
+}
+
+hr {
+    border-top: 4px solid #ff5f01;
+    margin: 0 auto;
+    padding: 0;
+    width:50%;
+}
+
+
+.container {
+    max-width: 960px;
+    background-image: url('picture/bg_light.png');
+    background-color: #f3f0e9;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {font-family: 'title-anicb', Helvetica, sans-serif;}
+.navbar {background-color: #ff5f01;}
+.navbar-light .navbar-nav .nav-item {border-right: 1px solid #FFF;}
+.navbar-light .navbar-nav .nav-item:last-child {border-right:0;}
+.navbar-light .navbar-nav .nav-link {color:#FFF;}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
+    color:#FFF;
+    text-decoration: underline;
+}
+
+.carousel-caption {
+    font-size: 2em;
+    text-align: left;
+    bottom: 120px;
+    color:#FFF;
+}
+.carousel-caption h4 {font-size: 1.8em;}
+
+#fellows h1, #besthunters h1, #jointhearmy {color:#000;}
+
+.nav-pills .nav-link {
+    color:#72716d;
+}
+.nav-pills .nav-link.active{
+    border:0;
+    background-color: transparent;
+    color:#ff5f01;
+    text-decoration: underline;
+}
+.card-deck {margin-left:0;margin-right:0;}
+.card-deck .card {
+    background-color: #191b1a;
+    color: #c2c2c2;
+    font-size:1.6em;
+}
+.card-deck .card .card-img-top {padding:0.2em;}
+.card-deck .card-body {padding: 0.5em;}
+
+.picture {
+    position:relative;
+    margin:0 auto;
+    padding: 0;
+    width: 100%;
+    height:auto;
+}
+.picture > p {margin:0;}
+.veilWhite {
+    position: absolute;
+    width:100%;
+    height:100%;
+    margin:0;
+    background-color: #333;
+    opacity:0.7;
+}
+.picture:hover .veilWhite {opacity:0;}
+
+.name {
+    position: absolute;
+    width:100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color:#FFF;
+    font-size: 2em;
+}
+.deadName {
+    text-decoration-line: line-through;
+    text-decoration-color: #ff5f01;
+    text-decoration-style: solid;
+}
+.picture:hover .name {font-size:1.5em; top: 80%;}
+
+.reward {
+    position: absolute;
+    width: 70%;
+    top: 0.5em;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #FFF;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    text-align:center;
+    font-size: 1em;
+    color:#000;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+.rewardDead {
+    color: #ff5f01;
+    background-color: transparent;
+    opacity: 1;
+    font-size: 1.6em;
+}
+.picture:hover .reward {display: none;}
+
+.nbCoins {color: #ff5f01;}
+
+#getmyreward  > div, #thering > div, #contactus > div {
+    background-color: #191b1a;
+    color:#FFF;
+}
+
+#getmyreward h1 {
+    color:#FFF;
+}
+
+#getmyreward p, #jointhearmy p {
+    font-size:1.6em;
+    margin-left:1em;
+
+}
+
+.btn-outline-secondary {
+    background-color:#FFF;
+    border-radius: 0;
+    font-size: 1.1em;
+    color:#ff5f01;
+    font-family: 'title-anicb', Helvetica, sans-serif;
+}
+
+h5 {
+    color:#ff5f01;
+    font-size:3em;
+}
+
+.media .media-body {color:#000;font-size:1.1em;}
+.media .media-body a {color:#000;text-decoration:underline;}
+.media .media-body .likethis {
+    background-color: #191b1a;
+    color:#ff5f01;
+    text-decoration: none;
+    font-size:1.4em;
+    padding:0 0.2em 0 0.2em;
+}
+
+#thering .card {border:0;border-bottom:5px solid #ff5f01;color:#000;/*font-size:1.5em;*/background-color: #dddddd;}
+#thering .card .card-header {
+    background-color:#ff5f01;
+    font-family: 'title-anicb', Helvetica, sans-serif;
+    font-size:1.2em;
+    color:#FFF;
+}
+#thering .card-body, #thering .card-body > blockquote {font-size:1.4em;}
+#thering .card th {
+    font-family: 'title-anicb', Helvetica, sans-serif;
+    color:#000;
+    font-size:0.8em;
+    padding: 0 0 0.2em 0;
+    border-bottom:3px solid #333 !important;
+    font-weight: normal;
+}
+
+.moreInfo {
+    font-family: 'title-anicb', Helvetica, sans-serif;
+    text-align: center;
+    color:#ff5f01;
+    font-size:1em;
+}
+.moreInfo .btn {
+    background-color:#191b1a;
+    border-radius: 0;
+    color:#ff5f01;
+}
+
+footer > div {
+    background-color: #ff5f01;
+    font-family: 'title-anicb', Helvetica, sans-serif;
+}
+
+ul {color:#FFF;list-style-type: none !important;}
+ul > li {padding:0.2em;}
+ul li > a {color:#FFF;}
+
+@media only screen and (max-width: 768px) {
+    .navbar-light .navbar-nav .nav-item {border-right:0;}
+    h1 {font-size:1em;}
+    h5 {font-size:1.2em;}
+    .media .media-body .likethis {
+        font-size:1em;
+        padding:0 0.2em 0 0.2em;
+    }
+    .moreInfo {font-size:0.5em;margin-left:0 !important;}
+    .moreInfo .btn {font-size:0.5em;}
+}
+@media (min-width: 769px) and (max-width: 870px){
+    .carousel-caption {
+        font-size:1.8em;
+        bottom: 70px;
+    }
+}
